@@ -1,11 +1,6 @@
 Rails.application.routes.draw do
-  get 'towns/lat'
-
-  get 'towns/lon'
-
-  get 'towns/weather'
-
-  root :to => "home#index"
+  resources :towns
+  root :to => "towns#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
